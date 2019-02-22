@@ -27,13 +27,13 @@ $(document).ready(function () {
     //reset the game after player wins or loses
     function reset() {
         counter = 0;
-        $("#target").html(targetNumber);
         targetNumber = randomNum(19, 120);
-        $("#playerScore").text(counter);
+        $("#target").html(targetNumber);
         var crystalOne = randomNum(1, 12);
         var crystalTwo = randomNum(1, 12);
         var crystalThree = randomNum(1, 12);
         var crystalFour = randomNum(1, 12);
+        $("#playerScore").text(counter);
     }
 
     //sets up clicks for each crystal
